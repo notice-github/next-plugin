@@ -20,19 +20,20 @@
 	"homepage": "https://notice.studio",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/notice-github/npm-plugins.git"
+		"url": "git+https://github.com/notice-github/next-plugin.git"
 	},
 	"bugs": {
-		"url": "https://github.com/notice-github/npm-plugins/issues"
+		"url": "https://github.com/notice-github/next-plugin/issues"
 	},
 	"author": {
 		"name": "Notice Studio",
-		"email": "jonasroussel@notice.studio",
+		"email": "jonas.roussel@notice.studio",
 		"url": "https://notice.studio"
 	},
 	"keywords": [
 		"notice",
 		"next",
+		"nextjs",
 		"integration"
 	],
 	"scripts": {
