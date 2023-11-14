@@ -12,12 +12,12 @@ export default defineConfig({
 			fileName: 'notice',
 		},
 		rollupOptions: {
-			external: [/^react\/?.*$/, /^next\/?.*$/],
+			external: [/^react$/, /^next\/?.*$/],
 			output: {
 				dir: 'lib',
 				globals: {
 					react: 'React',
-					'react/jsx-runtime': 'jsxRuntime',
+					// 'react/jsx-runtime': 'jsxRuntime',
 					'next/head.js': 'Head',
 				},
 			},
