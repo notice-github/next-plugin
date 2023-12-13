@@ -1,6 +1,6 @@
 {
 	"name": "@notice-org/next",
-	"version": "2.0.3",
+	"version": "3.0.0",
 	"description": "Notice NextJS Plugin",
 	"license": "MIT",
 	"type": "module",
