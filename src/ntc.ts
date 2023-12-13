@@ -19,7 +19,7 @@ async function query<T = any>(path: string, opts?: NTCQueryOptions): Promise<T> 
 				throw new Error('Unknown error')
 			}
 		} else {
-			const data = res.headers.get('Content-Type') === 'application/json' ? await res.json() : await res.text()
+			const data = res.headers.get('Content-Type')?.startsWith('application/json') ? await res.json() : await res.text()
 			return data
 		}
 	})
