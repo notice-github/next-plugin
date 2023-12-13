@@ -1,17 +1,17 @@
 import type { DOMElement, FC } from 'react'
-import type { NTCDocument } from './types'
+import type { NTCFragment } from './types'
 
 import Head from 'next/head.js'
 import React from 'react'
 
 interface Props {
-	document: NTCDocument
+	fragment: NTCFragment
 }
 
-export const Notice: FC<Props> = ({ document }) => {
+export const Notice: FC<Props> = ({ fragment }) => {
 	const heads: DOMElement<any, Element>[] = []
 
-	for (let elem of [...document.head, ...(document.meta ?? [])]) {
+	for (let elem of [...fragment.head, ...(fragment.meta ?? [])]) {
 		let element: DOMElement<any, Element>
 		if (elem.innerHTML) {
 			element = React.createElement(elem.tagName, {
@@ -31,13 +31,13 @@ export const Notice: FC<Props> = ({ document }) => {
 		<>
 			<Head>
 				{...heads}
-				<style id={`NTC_style-${document.id}`} dangerouslySetInnerHTML={{ __html: document.style }}></style>
-				<script id={`NTC_script-${document.id}`} dangerouslySetInnerHTML={{ __html: document.script }}></script>
+				<style id={`NTC_style-${fragment.id}`} dangerouslySetInnerHTML={{ __html: fragment.style }}></style>
+				<script id={`NTC_script-${fragment.id}`} dangerouslySetInnerHTML={{ __html: fragment.script }}></script>
 			</Head>
 			<div
-				id={document.id}
+				id={fragment.id}
 				className="NTC_wrapper"
-				dangerouslySetInnerHTML={{ __html: typeof window === 'undefined' ? wrapperInnerHTML(document.body) : '' }}
+				dangerouslySetInnerHTML={{ __html: typeof window === 'undefined' ? wrapperInnerHTML(fragment.body) : '' }}
 			></div>
 		</>
 	)

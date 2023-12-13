@@ -1,10 +1,5 @@
 lockfileVersion: '6.0'
 
-dependencies:
-  '@notice-org/ntc':
-    specifier: ^1.0.2
-    version: 1.0.2
-
 devDependencies:
   '@types/node':
     specifier: ^20.8.4
@@ -602,11 +597,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@notice-org/ntc@1.0.2:
-    resolution: {integrity: sha512-NNWRuJuvy9sVhzJ4bbfwTbK0UtI/BIpgnzOipyS4AF88gkDXEY9o5dsDpKyGIIvH58mWs2T4ektApGnbe7UEQQ==}
-    engines: {node: '>=18'}
-    dev: false
 
   /@swc/helpers@0.4.11:
     resolution: {integrity: sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==}

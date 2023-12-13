@@ -17,7 +17,6 @@ export default defineConfig({
 				dir: 'lib',
 				globals: {
 					react: 'React',
-					// 'react/jsx-runtime': 'jsxRuntime',
 					'next/head.js': 'Head',
 				},
 			},
