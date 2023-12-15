@@ -5,7 +5,7 @@ Notice handles translations, SEO, analytics, collaboration. It's a cross-platfor
 
 
 ## Install
-Steps to install Notice with React are listed on our documentation [integrations.notice.site/nextjs-30rxh5w1sr](https://integrations.notice.site/nextjs-30rxh5w1sr)
+Steps to install Notice with NextJS are listed on our documentation [integrations.notice.site/nextjs-30rxh5w1sr](https://integrations.notice.site/nextjs-30rxh5w1sr)
 
 
 ## Questions, issues & feedback
